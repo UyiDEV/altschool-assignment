@@ -13,68 +13,73 @@ html{
     font-size: 60.5%;
 }
 
-body{
-    margin: rem;
-    background: linear-gradient(#2e71af, #84a6c6);
-    color: #e4eef3;
+@media screen and  (max-width: 1600px) {
+    body{
+        margin: 1rem;
+        background: linear-gradient(#2e71af, #84a6c6);
+        color: #e4eef3;
+    }
+
+    main {
+        max-width: 1300px;
+        margin: 30px auto;
+        padding: 25px;
+        background: linear-gradient(#2e71af, #84a6c6);
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    header{
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 9%;
+        background-color: #2e71af;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .logo{
+        font-size: 5rem;
+        color: #ffc086;
+        font-weight: 800;
+    }
+
+    .logo:hover{
+        transform: scale(1.1);
+    }
+
+    nav a{
+        font-size: 1.8rem;
+        color: #e4eef3;
+        margin-left: 4rem;
+        font-weight: 500;
+        border-bottom: 3px solid transparent;
+    }
+    
+    nav a:hover,
+    nav a.active{
+        color: cornsilk;
+        border-bottom: 3px solid white;
+    }
 }
 
-main {
-    max-width: 1300px;
-    margin: 30px auto;
-    padding: 25px;
-    background: linear-gradient(#2e71af, #84a6c6);
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
 
-header{
-    margin-top: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: #2e71af;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
 
-.logo{
-    font-size: 5rem;
-    color: #ffc086;
-    font-weight: 800;
-}
+@media(max-width:700px){
 
-.logo:hover{
-    transform: scale(1.1);
-}
 
-nav a{
-    font-size: 1.8rem;
-    color: #e4eef3;
-    margin-left: 4rem;
-    font-weight: 500;
-    border-bottom: 3px solid transparent;
-}
-
-nav a:hover,
-nav a.active{
-    color: cornsilk;
-    border-bottom: 3px solid white;
-}
-
-@media(max-width:995px){
     nav{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 40%;
-        border-bottom: 3px solid white;
+        width: 100%;
         padding: 1rem solid;
-        background-color: #131419;
+        background-color: #2e71af;
         border-top: 0.1rem solid;
     }
 
@@ -83,14 +88,14 @@ nav a.active{
     }
 
     nav a{
-        display: block;
+        flex-direction: column;
         font-size: 2rem;
         margin: 1rem;
+        align-items: center;
     }
 
     nav a:hover,
     nav a.active{
-        padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid white;
     }
@@ -103,7 +108,7 @@ nav a.active{
 
 .intro{
     margin-top: 0rem;
-    padding-left: 10rem;
+    padding-left: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,6 +136,12 @@ span{
     position: relative;
     width: 32vw;
     border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    #hideimg{
+        display: none;
+    }
 }
 
 .about{
