@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omoruyi Emmanuel Osakue</title>
-    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Omoruyi</a>
-
         <nav>
             <a href="/index.html">Home</a>
             <a href="form.html">Form</a>
             <a href="table.html">Courses</a>
-            <a href="#" class="active">Message</a>
+            <a href="#" class="active">Media</a>
         </nav>
     </header>
+    <section>
+        <div style="text-align: center;">
+            <h1>Omoruyi Emmanuel Osakue</h1>
+            <p>This is an image of me which will change depending on the screen size</p>
+        </div>
+        <picture>
+            <!-- Desktop view -->
+            <source media="(min-width: 1300px)" srcset="/assets/desktop-view-img.jpg">
+            <!-- Tablet view -->
+            <source media="(min-width: 700px)" srcset="/assets/tablet-view-img.jpg">
+            <!-- Mobile view -->
+            <source media="(min-width: 320px)" srcset="/assets/mobile-view-img.jpg">
+            <img src="/assets/mobile-view-img.jpg" alt="">
+        </picture>
+        <hr>
+        <div style="text-align: center;">
+        <h1>A Passion for Speed: Formula 1 and the Intersection of Engineering</h1>
+        <p>Formula 1, a pinnacle of motorsport, is more than just a thrilling spectacle; 
+            it's a testament to human ingenuity and technological advancement. At the heart of this high-octane sport lies a 
+            fascinating interplay between mechanical engineering, materials science, and cloud computing.</p>
+        </div>
+        <audio controls>
+            <source src="/assets/formula-1_theme-song.mp3" type="">
+        </audio>
+        <hr>
+        <h1 style="text-align: center;">This is the trailer for the up coming F1 movie</h1>
+        <video controls>
+            <source src="/assets/f1_trailer.mp4" type="">
+        </video>
+    </section>
+    <footer>
+        <p>Done by <span>Omoruyi Emmanuel Osakue</span> AltSchool ID <strong>ALT/SOE/204/0172</strong></p>
+        <a href="#" class="top-link">Scroll to top</a>
+    </footer>
+    
 </body>
 </html>
